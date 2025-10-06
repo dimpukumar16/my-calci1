@@ -18,6 +18,30 @@ def subtract_negative(a, b):
     """Subtract the negatives of a and b"""
     return -a - -b  # same as -a + b
 
+import math
+
+def power(a, b):
+    """Raise a to the power of b with input validation and logging."""
+    if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
+        raise TypeError("Both arguments must be numbers")
+    
+    print(f"Calculating {a} ^ {b}")
+    result = a ** b
+    print(f"Result: {result}")
+    return result
+
+def sqrt(a):
+    """Calculate the square root of a number with validation and logging."""
+    if not isinstance(a, (int, float)):
+        raise TypeError("Input must be a number")
+    if a < 0:
+        raise ValueError("Cannot compute square root of a negative number")
+    
+    print(f"Calculating √{a}")
+    result = math.sqrt(a)
+    print(f"Result: {result}")
+    return result
+
 def multiply(a, b):
     """Multiply two numbers with input validation and logging."""
     if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
