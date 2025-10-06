@@ -10,6 +10,13 @@ def add(a, b):
 def subtract(a, b):
     """Subtract b from a"""
     return a - b
+def add_negative(a, b):
+    """Add the negatives of a and b"""
+    return -a + -b  # same as -(a + b)
+
+def subtract_negative(a, b):
+    """Subtract the negatives of a and b"""
+    return -a - -b  # same as -a + b
 
 def multiply(a, b):
     """Multiply two numbers with input validation and logging."""
